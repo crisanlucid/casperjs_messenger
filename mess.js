@@ -7,7 +7,6 @@ var casper = require('casper').create({
     verbose : true,
     logLevel : 'info',
 });
-var x = require('casper').selectXPath;
 
 
 
@@ -24,7 +23,7 @@ var talkTo_username = "#person";
  */
 casper.start('https://www.messenger.com', function() {
 
-    // The pretty HUGE viewport allows for roughly 1200 images.
+    // The pretty HUGE viewport allows for to have a big rezolution of printscreen.
     this.viewport(1900,1000);
 
     //login with your account
